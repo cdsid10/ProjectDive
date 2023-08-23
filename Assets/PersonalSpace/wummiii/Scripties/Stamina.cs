@@ -42,7 +42,7 @@ public class Stamina : MonoBehaviour
             decreasingStamina = true;
             StartCoroutine(DecreaseStaminaSprint());
         }
-        if (currentStamina < _maxStamina && increasingStamina == false)
+        if (currentStamina < _maxStamina && increasingStamina == false && decreasingStamina == false)
         {
             increasingStamina = true;
             StartCoroutine(IncreaseStamina());
