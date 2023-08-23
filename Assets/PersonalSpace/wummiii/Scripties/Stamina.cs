@@ -21,6 +21,7 @@ public class Stamina : MonoBehaviour
     private float currentStamina;
     private StarterAssetsInputs _input;
 
+    // STILL NEED TO APPLY STUFF LIKE "CANT JUMP IF NO STAMINA OR CANT SPRINT, MAYBE ADD A SOME DELAY FOR REGENERATION AFTER PLAYER HIT 0 STAMINA
     // Start is called before the first frame update
     void Start()
     {
