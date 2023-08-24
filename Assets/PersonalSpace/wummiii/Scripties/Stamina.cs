@@ -9,7 +9,7 @@ using UnityEngine.InputSystem;
 
 public class Stamina : MonoBehaviour
 {
-    [SerializeField] private GameObject staminaText;
+    [SerializeField] private GameObject _staminaText;
     [SerializeField] private float _maxStamina;
     [SerializeField] private float _tickTime;
     [SerializeField] private float _exhaustDuration;
@@ -17,10 +17,11 @@ public class Stamina : MonoBehaviour
     [SerializeField] private float _staminaDecreasePerTick;
     [SerializeField] private float _staminaDecreasePerJump;
 
-    private bool exhaustedDebuff = false;
-    private bool tickTimerRunning = false;
+    private bool ExhaustedDebuff = false;
+    private bool TickTimerRunning = false;
+    private bool JumpTimerRunning = false;
 
-    private float currentStamina;
+    private float CurrentStamina;
     private StarterAssetsInputs _input;
     private FirstPersonController _firstPersonController;
 
@@ -29,74 +30,76 @@ public class Stamina : MonoBehaviour
     {
         _input = GetComponent<StarterAssetsInputs>();
         _firstPersonController = GetComponent<FirstPersonController>();
-        currentStamina = _maxStamina;
+        CurrentStamina = _maxStamina;
     }
 
     // Update is called once per frame
     void Update()
     {
-        // Check if we have enouugh stamina and take the firstPersonController's abilty to jump if we dont have enough
-        if(currentStamina < _staminaDecreasePerJump)
+        // Uheck if we have enouugh stamina and take the firstPersonController's abilty to jump if we dont have enough THIS HAS A BUG the player falls differently when you run over and edge and .Grounded = false ;
+        if(CurrentStamina < _staminaDecreasePerJump)
         {
             _firstPersonController.Grounded = false;
         }
 
-        // jump
-        if (_input.jump && _firstPersonController.Grounded && tickTimerRunning == false)
+        // Jump
+        if (_input.jump && _firstPersonController.Grounded && JumpTimerRunning == false)
         {
-            tickTimerRunning = true;
+            JumpTimerRunning = true;
             DecreaseStamina(_staminaDecreasePerJump);
             StartCoroutine(JumpTimer());
         }
 
-        // sprint
-        else if (_input.sprint && _input.move != Vector2.zero && tickTimerRunning == false && currentStamina > 0)
+        // Stamina regeneration and Sprint are in direct conflict and need to be in this order
+        // Sprint
+        if (_input.sprint && _input.move != Vector2.zero && TickTimerRunning == false && CurrentStamina > 0)
         {
-            tickTimerRunning = true;
+            TickTimerRunning = true;
             DecreaseStamina(_staminaDecreasePerTick);
             StartCoroutine(TickTimer());
         }
-        // stamina regeneration
-        else if (currentStamina < _maxStamina && tickTimerRunning == false && exhaustedDebuff == false)
+        // Stamina regeneration
+        else if (CurrentStamina < _maxStamina && TickTimerRunning == false && ExhaustedDebuff == false)
         {
-            tickTimerRunning = true;
+            TickTimerRunning = true;
             IncreaseStamina(_staminaIncreasePerTick);
             StartCoroutine(TickTimer());
         }
 
-        // exhaust if zero mana, activate/deactivate sprint ability by changing sprintspeed to the normal movementspeed and stop stamina regeneration for the exhaustion time
-        else if (currentStamina <= 0 && exhaustedDebuff == false)
+        // Exhaust if zero mana, activate/deactivate sprint ability by changing sprintspeed to the normal movementspeed and stop stamina regeneration for the exhaustion time
+        if (CurrentStamina <= 0 && ExhaustedDebuff == false)
         {
-            exhaustedDebuff = true;
+            ExhaustedDebuff = true;
             StartCoroutine(ExhaustedTimer());
         }
+
         RefreshUI();
     }
 
-    // Decrease Stamina by value
+    // Decrease CurrentStamina by value
     private void DecreaseStamina(float value)
     {
-        currentStamina -= value;
-        if (currentStamina < 0)
+        CurrentStamina -= value;
+        if (CurrentStamina < 0)
         {
-            currentStamina = 0;
+            CurrentStamina = 0;
         }
     }
 
-    // Increase Stamina bx value
+    // Increase CurrentStamina by value
     private void IncreaseStamina(float value)
     {
-        currentStamina += value;
-        if (currentStamina > _maxStamina)
+        CurrentStamina += value;
+        if (CurrentStamina > _maxStamina)
         {
-            currentStamina = _maxStamina;
+            CurrentStamina = _maxStamina;
         }
     }
 
     // Refresh Userinterface
     private void RefreshUI()
     {
-        staminaText.GetComponent<TextMeshProUGUI>().text = currentStamina.ToString();
+        _staminaText.GetComponent<TextMeshProUGUI>().text = CurrentStamina.ToString();
     }
 
     // Set sprintSpeed = moveSpeed to fake "not sprinting" then reset sprintSpeed
@@ -109,21 +112,21 @@ public class Stamina : MonoBehaviour
         yield return new WaitForSeconds(_exhaustDuration);
 
         _firstPersonController.SprintSpeed = temp;
-        currentStamina = 1;
-        exhaustedDebuff = false;
+        CurrentStamina = 1;
+        ExhaustedDebuff = false;
     }
 
-    // This Timer is here because I check if the conditions to make a jump are met, not if the jump was actually triggered (_firstPersonController.Grounded is triggered more than one frame)
+    // This Timer is here because I check if the conditions to make a jump are met, not if the jump was actually made (_firstPersonController.Grounded is triggered more than one frame)
     private IEnumerator JumpTimer()
     {
         yield return new WaitForSeconds(0.1f);
-        tickTimerRunning = false;
+        JumpTimerRunning = false;
     }
 
-    // Decrease or Increase stamina timed by a tickrate
+    // Wait for TickTime
     private IEnumerator TickTimer()
     {
         yield return new WaitForSeconds(_tickTime);
-        tickTimerRunning = false;
+        TickTimerRunning = false;
     }
 }
