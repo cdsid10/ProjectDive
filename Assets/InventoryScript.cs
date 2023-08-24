@@ -1,3 +1,4 @@
+using StarterAssets;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,101 +10,85 @@ using UnityEngine.UI;
 public class InventoryScript : MonoBehaviour
 {
     [NonSerialized] public List<string> inventory = new List<string>();
-    [SerializeField] private RectTransform gb;
     [SerializeField] private RectTransform item;
-    private RectTransform rt;
-    private float gbWidth;
-    [SerializeField] private float spacing;
-    public int totalGb;
+    [NonSerialized] public int totalGb;
+    private Transform backpack;
+    private Transform hotbar;
+    private int equippedGb;
+    [SerializeField] private StarterAssetsInputs playerInputScript;
 
 
     private void Awake()
     {
-        rt = GetComponent<RectTransform>();
+        backpack = transform.Find("Backpack");
+        hotbar = transform.Find("Hotbar");
 
-        //get gridbox measurements
-        RectTransform gbRt = Instantiate(gb, transform);
-        gbWidth = gbRt.rect.width * gbRt.lossyScale.x;
-        Destroy(gbRt.gameObject);
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            inventory.Add("Empty");
+        }
+
+        AddItem("Test_Item", 3);
+        AddItem("Test_Item", 19);
     }
-
-
-    private void Start()
-    {
-        LoadGrid();
-        inventory[3] = "Test_Item";
-        inventory[30] = "Test_Item";
-    }
-
 
     private void FixedUpdate()
     {
-        UpdateInventory();
-    }
-
-
-    private void LoadGrid()
-    {
-        int rows = Mathf.FloorToInt(rt.rect.height / (gbWidth + spacing));
-        int cols = Mathf.FloorToInt(rt.rect.width / (gbWidth + spacing));
-        totalGb = rows * cols;
-
-        for (int row = 0; row < rows; row++)
+        // update inventory info
+        int i = 0;
+        foreach (Transform gridbox in transform.GetComponentsInChildren<Transform>()) 
         {
-            float y = (gbWidth + spacing) * -row;
-            for (int col = 0; col < cols; col++)
+            if (gridbox.childCount > 0 && gridbox.name.Contains("GridBox"))
             {
-                // create gb
-                float x = (gbWidth + spacing) * col;
-                RectTransform newGb = Instantiate(gb, transform);
-                newGb.anchoredPosition = new Vector2(x, y);
-
-                // set gb name
-                int number = (row * cols) + col + 1;
-                newGb.name = number.ToString();
-
-                // add gb info to list
-                inventory.Add("Empty");
+                inventory[i] = gridbox.GetComponentInChildren<ItemInvScript>().itemName;
+            }
+            else
+            {
+                inventory[i] = "Empty";
             }
         }
     }
 
 
-    public Transform GetGbFromNumber(int number)
+    public void AddItem(string itemName, int gb)
     {
-        int newNumber = number + 1;
-        return transform.Find(newNumber.ToString());
-    }
-
-    public void ClearGbItems(Transform gb)
-    {
-        Destroy(gb.GetChild(0).gameObject);
-    }
-
-
-    private void AddItemUI(string itemName, int gbNumber)
-    {
-        Transform toGb = transform.Find(gbNumber.ToString());
-        RectTransform newItemUI = Instantiate(item, Vector2.zero, Quaternion.identity, toGb);
-        newItemUI.anchoredPosition = Vector2.zero; 
-
-        // set values
-        newItemUI.GetComponent<ItemInvScript>().itemName = itemName;
-    }
-
-
-    private void UpdateInventory()
-    {
-        for (int gbNumber = 0; gbNumber < totalGb; gbNumber++)
+        // search hotbar
+        string gbName = "GridBox_Inv (" + gb.ToString() + ")";
+        Transform toGb = hotbar.Find(gbName);
+        if (toGb != null)
         {
-            Transform gb = GetGbFromNumber(gbNumber);
-            if (inventory[gbNumber] != "Empty")
+            // else search backpack
+            backpack.Find(gbName);
+            if (toGb != null)
             {
-                AddItemUI(inventory[gbNumber], gbNumber);
+                // add
+                RectTransform newItem = Instantiate(item, toGb.position, Quaternion.identity, toGb);
+                newItem.anchoredPosition = Vector2.zero;
+                newItem.GetComponent<ItemInvScript>().itemName = itemName;
             }
-            else if (gb.childCount > 0)
+        }
+    }
+
+
+    private void EquipTool()
+    {
+        string toolName = hotbar.Find("GridBox_Inv (" + equippedGb.ToString() + ")").name;
+        GameObject toolObj = ItemData.GetObjectFromItemName(toolName);
+    }
+
+
+    private void Update()
+    {
+        if (Input.anyKeyDown)
+        {
+            string inputString = Input.inputString;
+
+            if (int.TryParse(inputString, out equippedGb)) { EquipTool(); }
+            if (inputString == "`")
             {
-                ClearGbItems(gb);
+                bool bpActive = backpack.gameObject.activeSelf;
+                backpack.gameObject.SetActive(!bpActive);
+                playerInputScript.cursorLocked = bpActive;
             }
         }
     }

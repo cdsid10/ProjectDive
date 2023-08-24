@@ -1,63 +1,73 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-public class ItemInvScript : MonoBehaviour
+public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
-    public int currentGb;
+    private Image image;
+    [NonSerialized] public int currentGb;
     [NonSerialized] public string itemName = "Empty";
-    private bool mouseDown = false;
+    [NonSerialized] public Transform parentAfterDrag;
+    [NonSerialized] public Transform parentBeforeDrag;
+
+    private void Awake()
+    {
+        image = GetComponent<Image>();
+    }
+
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        parentAfterDrag = transform.parent;
+        parentBeforeDrag = transform.parent;
+        transform.SetParent(GetComponentInParent<Canvas>().transform);
+        image.raycastTarget = false;
+    }
+
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        Debug.Log("Dragging");
+        transform.position = Input.mousePosition;
+        
+    }
+
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        if (parentAfterDrag.childCount > 0)
+        {
+            parentAfterDrag.GetChild(0).SetParent(parentBeforeDrag);
+        }
+        transform.SetParent(parentAfterDrag);
+        image.raycastTarget = true;
+    }
+
+
+    public void OnDrop(PointerEventData eventData)
+    {
+        ItemInvScript pointerItemScript = eventData.pointerDrag.GetComponent<ItemInvScript>();
+
+        // set replacer's parent to replacee's parent
+        pointerItemScript.parentAfterDrag = transform.parent;
+
+        // set replacee to replacer's parent before drag
+        transform.SetParent(pointerItemScript.parentBeforeDrag);
+    }
+
 
     private void FixedUpdate()
     {
-        mouseDown = Input.GetMouseButtonDown(0);
-
         // update sprite
-        Sprite itemSprite = ItemData.itemSprites[int.Parse(ItemData.GetItemInfo(itemName, "SpriteNumber"))];
+        Sprite itemSprite = ItemData.itemSprites[int.Parse(ItemData.GetItemInfo(itemName, "Index"))];
 
         if (GetComponent<Image>().sprite != itemSprite)
         {
             GetComponent<Image>().sprite = itemSprite;
-        }
-    }
-
-
-    public IEnumerator OnSelect()
-    {
-        Debug.Log("selected");
-        int fromGb = currentGb;
-        int toGb;
-
-        while (mouseDown)
-        {
-            transform.position = Input.mousePosition;
-            yield return null;
-        }
-
-        //place item ui on closest grid on release
-        GameObject closestGb = null;
-        float closestDistance = 10000.0f;
-
-        InventoryScript invScript = transform.GetComponentInParent<InventoryScript>();
-        for (int gb = 0; gb < invScript.totalGb; gb++)
-        {
-            Transform gridT = invScript.GetGbFromNumber(gb);
-            float dist = Vector3.Distance(transform.position, gridT.position);
-            if (dist < closestDistance)
-            {
-                closestGb = gridT.gameObject;
-                closestDistance = dist;
-            }
-        }
-        if (closestGb != null)
-        {
-            transform.position = closestGb.transform.position;
-            toGb = int.Parse(closestGb.name);
-
-            invScript.inventory[fromGb] = invScript.inventory[toGb];
-            invScript.inventory[toGb] = invScript.inventory[fromGb];
         }
     }
 }
