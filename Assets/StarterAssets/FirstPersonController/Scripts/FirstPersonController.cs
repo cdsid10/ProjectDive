@@ -51,6 +51,8 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		private Animator _animator;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -93,6 +95,7 @@ namespace StarterAssets
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
+			_animator = GetComponentInChildren<Animator>();
 		}
 
 		private void Start()
@@ -115,6 +118,7 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			Animate();
 		}
 
 		private void LateUpdate()
@@ -150,6 +154,15 @@ namespace StarterAssets
 				transform.Rotate(Vector3.up * _rotationVelocity);
 			}
 		}
+
+		private void Animate()
+		{
+			bool isMoving = (_input.move - Vector2.zero).magnitude > 0.1f;
+
+            // set animator parameters
+            _animator.SetBool("Running", _input.sprint && isMoving);
+			_animator.SetBool("Walking", !_input.sprint && isMoving);
+        }
 
 		private void Move()
 		{
@@ -196,7 +209,7 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
-		}
+        }
 
 		private void JumpAndGravity()
 		{
