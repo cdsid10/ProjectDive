@@ -2554,9 +2554,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   staminaText: {fileID: 1478855156}
   _maxStamina: 100
-  _increaseAmountPerSecond: 3
-  _decreaseAmountPerSecond: 3
-  _decreaseAmountPerJump: 50
+  _tickTime: 0.1
+  _exhaustDuration: 2
+  _staminaIncreasePerTick: 1
+  _staminaDecreasePerTick: 2
+  _staminaDecreasePerJump: 20
 --- !u!1001 &7288094137546172433
 PrefabInstance:
   m_ObjectHideFlags: 0
