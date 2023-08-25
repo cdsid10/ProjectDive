@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
 {
-    private Image image;
+    private Image _image;
     [NonSerialized] public int currentGb;
     [NonSerialized] public string itemName = "Empty";
     [NonSerialized] public Transform parentAfterDrag;
@@ -16,7 +16,7 @@ public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     private void Awake()
     {
-        image = GetComponent<Image>();
+        _image = GetComponent<Image>();
     }
 
 
@@ -25,15 +25,13 @@ public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         parentAfterDrag = transform.parent;
         parentBeforeDrag = transform.parent;
         transform.SetParent(GetComponentInParent<Canvas>().transform);
-        image.raycastTarget = false;
+        _image.raycastTarget = false;
     }
 
 
     public void OnDrag(PointerEventData eventData)
     {
-        Debug.Log("Dragging");
         transform.position = Input.mousePosition;
-        
     }
 
 
@@ -44,7 +42,7 @@ public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             parentAfterDrag.GetChild(0).SetParent(parentBeforeDrag);
         }
         transform.SetParent(parentAfterDrag);
-        image.raycastTarget = true;
+        _image.raycastTarget = true;
     }
 
 

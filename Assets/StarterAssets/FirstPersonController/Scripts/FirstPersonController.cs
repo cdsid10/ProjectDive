@@ -95,7 +95,6 @@ namespace StarterAssets
 			{
 				_mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
 			}
-			_animator = GetComponentInChildren<Animator>();
 		}
 
 		private void Start()
@@ -118,7 +117,6 @@ namespace StarterAssets
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
-			Animate();
 		}
 
 		private void LateUpdate()
@@ -154,15 +152,6 @@ namespace StarterAssets
 				transform.Rotate(Vector3.up * _rotationVelocity);
 			}
 		}
-
-		private void Animate()
-		{
-			bool isMoving = (_input.move - Vector2.zero).magnitude > 0.1f;
-
-            // set animator parameters
-            _animator.SetBool("Running", _input.sprint && isMoving);
-			_animator.SetBool("Walking", !_input.sprint && isMoving);
-        }
 
 		private void Move()
 		{
