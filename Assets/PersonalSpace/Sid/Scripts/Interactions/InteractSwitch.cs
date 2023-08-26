@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using PersonalSpace.Sid.Scripts.Interactions.PuzzlePieces;
 using PersonalSpace.Sid.Scripts.Interactions.PuzzlePieces.Platforms;
+using PersonalSpace.Sid.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -21,6 +22,14 @@ namespace PersonalSpace.Sid.Scripts.Interactions
         [SerializeField] private Color32 red = new Color32();
         [SerializeField] private Color32 green = new Color32();
 
+        [SerializeField] private AudioClip click;
+
+        private Animator animator;
+
+        private void Awake()
+        {
+            animator = gameObject.GetComponent<Animator>();
+        }
 
         private void Start()
         {
@@ -33,6 +42,8 @@ namespace PersonalSpace.Sid.Scripts.Interactions
         public void Interact()
         {
             puzzleSolved = !puzzleSolved;
+            animator.SetTrigger("buttonPressed");
+            SoundManager.Instance.PlaySoundEffects(click);
             
             foreach (var interactable in puzzleInteractablesList)
             {

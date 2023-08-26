@@ -9,6 +9,8 @@ namespace PersonalSpace.Sid.Scripts.Managers
 
         [SerializeField] private AudioSource musicSource;
         [SerializeField] private AudioSource sfxSource;
+        [field: SerializeField] public AudioSource footStepSource { get; set; }
+        [SerializeField] private AudioSource jumpSource;
 
         private void Awake()
         {
@@ -23,9 +25,41 @@ namespace PersonalSpace.Sid.Scripts.Managers
             }
         }
 
-        public void PlaySound(AudioClip clip)
+        public void PlaySoundEffects(AudioClip clip)
         {
             sfxSource.PlayOneShot(clip);
+        }
+
+        public void PlayTenseMusic()
+        {
+            musicSource.Play();
+        }
+
+        public void PlayFootstepSound()
+        {
+            if (!footStepSource.isPlaying)
+            {
+                footStepSource.Play();
+            }
+            else
+            {
+                footStepSource.UnPause();
+            }
+        }
+
+        public void PauseFootstepSound()
+        {
+            footStepSource.Pause();
+        }
+
+        public void PlayJumpSound()
+        {
+            jumpSource.Play();
+        }
+
+        public void PlayCheckpointSound(AudioClip checkpoint)
+        {
+            sfxSource.PlayOneShot(checkpoint);
         }
     }
 }

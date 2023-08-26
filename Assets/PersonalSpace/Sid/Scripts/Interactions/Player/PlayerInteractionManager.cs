@@ -1,3 +1,4 @@
+using PersonalSpace.Sid.Scripts.Interactions.Telephone;
 using PersonalSpace.Sid.Scripts.Managers;
 using UnityEngine;
 
@@ -11,7 +12,7 @@ namespace PersonalSpace.Sid.Scripts.Interactions.Player
 
         private void Update()
         {
-            if (!CanInteract) return;
+            if (!CanInteract || !_interactable.IsInteractable) return;
 
             if (Input.GetKeyDown(KeyCode.E) && _interactable != null)
             {
@@ -24,17 +25,30 @@ namespace PersonalSpace.Sid.Scripts.Interactions.Player
             if (!other.TryGetComponent(out IInteractable interactable)) return;
             _interactable = interactable;
             CanInteract = _interactable.IsInteractable;
-            UIManager.Instance.ShowInteractText(_interactable.InteractText);
+            if (CanInteract)
+            {
+                UIManager.Instance.ShowInteractText();
+            }
         }
 
         private void OnTriggerExit(Collider other)
         {
             if (!other.TryGetComponent(out IInteractable interactable)) return;
-            _interactable.IsInteractable = true;
+
+            if (interactable is InteractStartPhone startPhone && !startPhone.HasAlreadyRinged)
+            {
+                _interactable.IsInteractable = false;
+
+            }
+            else
+            {
+                _interactable.IsInteractable = true;
+            }
             _interactable = null;
             CanInteract = false;
             UIManager.Instance.HideInteractText();
             UIManager.Instance.HideCodePuzzleText();
+            UIManager.Instance.HideRecorderScreen();
         }
     }
 }

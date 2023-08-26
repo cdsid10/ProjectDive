@@ -456,6 +456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 6637537995906479891}
+  keyClick: {fileID: 0}
 --- !u!1 &464188845964249556
 GameObject:
   m_ObjectHideFlags: 0
@@ -624,6 +625,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 1978972319006711842}
+  keyClick: {fileID: 0}
 --- !u!65 &2995913095605048986
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -813,6 +815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 4953851375934316533}
+  keyClick: {fileID: 0}
 --- !u!65 &7335608166505867084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1061,6 +1064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 1904391163277599060}
+  keyClick: {fileID: 0}
 --- !u!65 &2679280609813905610
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1195,6 +1199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 3690347122167253598}
+  keyClick: {fileID: 0}
 --- !u!1 &1571185165111612898
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2092,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 2553476135354032454}
+  keyClick: {fileID: 0}
 --- !u!1 &3055906367297813121
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,6 +2186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 4940990376088239007}
+  keyClick: {fileID: 0}
 --- !u!65 &6021777648327800842
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2599,6 +2606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 3325155869150055557}
+  keyClick: {fileID: 0}
 --- !u!1 &4200817888806665214
 GameObject:
   m_ObjectHideFlags: 0
@@ -2692,6 +2700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 4591083856938917276}
+  keyClick: {fileID: 0}
 --- !u!65 &7169165769982547841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3116,6 +3125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 6329609964384922985}
+  keyClick: {fileID: 0}
 --- !u!65 &2176125862811636644
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3705,6 +3715,10 @@ MonoBehaviour:
   playerKeypadButtonList: []
   door: {fileID: 0}
   displayText: {fileID: 1469030723754691340}
+  keypadProcessing: {fileID: 0}
+  keyValid: {fileID: 0}
+  keyError: {fileID: 0}
+  doorOpen: {fileID: 0}
 --- !u!1 &6329609964384922985
 GameObject:
   m_ObjectHideFlags: 0
@@ -3945,6 +3959,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 8464476489870574964}
+  keyClick: {fileID: 0}
 --- !u!65 &5235578874934171832
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4257,6 +4272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 5092040543667221266}
+  keyClick: {fileID: 0}
 --- !u!1 &6738535187565956124
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,6 +4461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 7033534283530585963}
+  keyClick: {fileID: 0}
 --- !u!1 &7033534283530585963
 GameObject:
   m_ObjectHideFlags: 0
@@ -4677,6 +4694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 5557283843833586272}
+  keyClick: {fileID: 0}
 --- !u!1 &7418379651520819550
 GameObject:
   m_ObjectHideFlags: 0
@@ -4924,6 +4942,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 127220218379688888}
+  keyClick: {fileID: 0}
 --- !u!1 &7624845960526064131
 GameObject:
   m_ObjectHideFlags: 0
@@ -5037,6 +5056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 7862930631937238043}
+  keyClick: {fileID: 0}
 --- !u!1 &7682828199268632565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5264,6 +5284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 8089411554403209816}
+  keyClick: {fileID: 0}
 --- !u!65 &3362907260790889147
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5536,6 +5557,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 7300339771795037118}
+  keyClick: {fileID: 0}
 --- !u!65 &1872749320472404849
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5774,8 +5796,9 @@ MonoBehaviour:
       m_Calls: []
   m_text: enter code
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e73557638b2017f45b3558a12b89d8f5, type: 2}
+  m_sharedMaterial: {fileID: 4764272820453313619, guid: e73557638b2017f45b3558a12b89d8f5,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6029,6 +6052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 8061107934739241779}
+  keyClick: {fileID: 0}
 --- !u!1 &8699039575287145425
 GameObject:
   m_ObjectHideFlags: 0
@@ -6122,6 +6146,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 6738535187565956124}
+  keyClick: {fileID: 0}
 --- !u!65 &2017353130527951078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6236,6 +6261,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 854271367753506484}
+  keyClick: {fileID: 0}
 --- !u!65 &6700939510580182511
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6370,6 +6396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <buttonNumber>k__BackingField: 
   buttonHighlightBorder: {fileID: 464188845964249556}
+  keyClick: {fileID: 0}
 --- !u!1 &8833286450551581643
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,5 +1,7 @@
+using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace PersonalSpace.Sid.Scripts.Managers
 {
@@ -18,6 +20,12 @@ namespace PersonalSpace.Sid.Scripts.Managers
         [SerializeField] private TextMeshProUGUI codePuzzleCodeFooter;
         [SerializeField] private TextMeshProUGUI codePuzzleDescription;
         [SerializeField] private TextMeshProUGUI codePuzzleNote;
+        
+        [Header("Checkpoint Screen")] 
+        [SerializeField] private CanvasGroup blackFadeScreen;
+
+        [Header("Recorder Message")] 
+        [SerializeField] private CanvasGroup recorderCanvasGroup;
 
         private void Awake()
         {
@@ -32,9 +40,55 @@ namespace PersonalSpace.Sid.Scripts.Managers
             }
         }
 
+        public void ShowRecorderScreen()
+        {
+            StartCoroutine(FadeUIElements(recorderCanvasGroup, 1f, 0.25f));
+        }
+
+        public void HideRecorderScreen()
+        {
+            StartCoroutine(FadeUIElements(recorderCanvasGroup, 0f, 0.25f));
+        }
+
+        public void FadeInCheckpointScreen(float duration)
+        {
+            StartCoroutine(FadeUIElements(blackFadeScreen, 1f, duration));
+        }
+
+        public void FadeOutCheckpointScreen(float duration)
+        {
+            StartCoroutine(FadeUIElements(blackFadeScreen, 0f, duration));
+        }
+        
+        IEnumerator FadeLoadingScreen(float targetValue, float duration)
+        {
+            float startValue = blackFadeScreen.alpha;
+            float time = 0;
+            while (time < duration)
+            {
+                blackFadeScreen.alpha = Mathf.Lerp(startValue, targetValue, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+            blackFadeScreen.alpha = targetValue;
+        }
+
+        IEnumerator FadeUIElements(CanvasGroup canvasGroup, float targetValue, float duration)
+        {
+            float startValue = canvasGroup.alpha;
+            float time = 0;
+            while (time < duration)
+            {
+                canvasGroup.alpha = Mathf.Lerp(startValue, targetValue, time / duration);
+                time += Time.deltaTime;
+                yield return null;
+            }
+            canvasGroup.alpha = targetValue;
+        }
+
         public void ShowCodePuzzleText(string titleToShow, string code, string codeFooter, string descriptionToShow, string note)
         {
-            puzzleCodeCanvasGroup.alpha = 1;
+            StartCoroutine(FadeUIElements(puzzleCodeCanvasGroup, 1f, 0.25f));
             codePuzzleTitle.text = titleToShow;
             codePuzzleCode.text = code;
             codePuzzleCodeFooter.text = codeFooter;
@@ -44,7 +98,7 @@ namespace PersonalSpace.Sid.Scripts.Managers
 
         public void HideCodePuzzleText()
         {
-            puzzleCodeCanvasGroup.alpha = 0;
+            StartCoroutine(FadeUIElements(puzzleCodeCanvasGroup, 0f, 0.25f));
             codePuzzleTitle.text = "";
             codePuzzleCode.text = "";
             codePuzzleCodeFooter.text = "";
@@ -52,16 +106,14 @@ namespace PersonalSpace.Sid.Scripts.Managers
             codePuzzleNote.text = "";
         }
 
-        public void ShowInteractText(string textToBeShown)
+        public void ShowInteractText()
         {
-            interactCanvasGroup.alpha = 1; //use tween
-            interactText.text = textToBeShown;
+            StartCoroutine(FadeUIElements(interactCanvasGroup, 1f, 0.25f));
         }
 
         public void HideInteractText()
         {
-            interactCanvasGroup.alpha = 0; //use tween
-            interactText.text = "";
+            StartCoroutine(FadeUIElements(interactCanvasGroup, 0f, 0.25f));
         }
     }
 }

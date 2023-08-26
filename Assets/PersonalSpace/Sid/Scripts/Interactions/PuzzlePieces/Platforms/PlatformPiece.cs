@@ -104,7 +104,7 @@ namespace PersonalSpace.Sid.Scripts.Interactions.PuzzlePieces.Platforms
         {
             if (IsPuzzlePieceEnabled)
             {
-                SoundManager.Instance.PlaySound(disappear);
+                SoundManager.Instance.PlaySoundEffects(disappear);
                 platformCollider.enabled = false;
                 
                 if (hasMultipleMeshRenderers)
@@ -127,7 +127,7 @@ namespace PersonalSpace.Sid.Scripts.Interactions.PuzzlePieces.Platforms
             }
             else
             {
-                SoundManager.Instance.PlaySound(appear);
+                SoundManager.Instance.PlaySoundEffects(appear);
                 platformCollider.enabled = true;
                 
                 if (hasMultipleMeshRenderers)

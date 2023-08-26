@@ -1,4 +1,6 @@
 using System;
+using PersonalSpace.Sid.Scripts.KeypadSystems;
+using PersonalSpace.Sid.Scripts.Managers;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Serialization;
@@ -12,6 +14,7 @@ namespace PersonalSpace.Sid.Scripts
         [field: SerializeField] public string buttonNumber { get; private set; }
         //[field: SerializeField] public Image buttonImage { get; set; }
         [SerializeField] private GameObject buttonHighlightBorder;
+        [SerializeField] private AudioClip keyClick;
 
         private Collider keypadCollider;
         private KeypadSystem keypadSystem;
@@ -27,6 +30,7 @@ namespace PersonalSpace.Sid.Scripts
 
         public void Interact()
         {
+            SoundManager.Instance.PlaySoundEffects(keyClick);
             keypadSystem.AddToKeypadList(this);
         }
 

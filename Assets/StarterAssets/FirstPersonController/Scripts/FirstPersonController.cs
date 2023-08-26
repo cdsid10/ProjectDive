@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using PersonalSpace.Sid.Scripts.Managers;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
 #endif
@@ -119,9 +120,19 @@ namespace StarterAssets
 		{
 			if (!CanMove) return;
 			
+			bool wasGrounded = Grounded;
+			
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
+			
+			if (!wasGrounded && Grounded)
+			{
+				if (SoundManager.Instance != null)
+				{
+					SoundManager.Instance.PlayJumpSound();
+				}
+			}
 		}
 
 		private void LateUpdate()
@@ -160,8 +171,6 @@ namespace StarterAssets
         
 		private void Move()
 		{
-			//if (!CanMove) return;
-			
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
@@ -205,12 +214,23 @@ namespace StarterAssets
 
 			// move the player
 			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
-        }
+			if (SoundManager.Instance != null)
+			{
+				if (_controller.isGrounded && _controller.velocity.magnitude > 0.1f)
+				{
+					SoundManager.Instance.footStepSource.pitch = _input.sprint ? 1.5f : 1f;
+
+					SoundManager.Instance.PlayFootstepSound();
+				}
+				else
+				{
+					SoundManager.Instance.PauseFootstepSound();
+				}
+			}
+		}
 
 		private void JumpAndGravity()
 		{
-			//if (!CanMove) return;
-			
 			if (Grounded)
 			{
 				// reset the fall timeout timer

@@ -13,10 +13,16 @@ namespace PersonalSpace.Sid.Scripts.Interactions
         [field: SerializeField] public string PuzzleDescriptionText { get; set; }
         [field: SerializeField] public string PuzzleNoteText { get; set; }
         
+        [SerializeField] private AudioClip click;
+        
         public void Interact()
         {
+            if(!IsInteractable) return;
+            
             IsInteractable = false;
-            UIManager.Instance.ShowCodePuzzleText(PuzzleTitleText, PuzzleCodeText, PuzzleCodeFooterText, PuzzleDescriptionText, PuzzleNoteText);
+            SoundManager.Instance.PlaySoundEffects(click);
+            UIManager.Instance.ShowCodePuzzleText(PuzzleTitleText, PuzzleCodeText, PuzzleCodeFooterText, 
+                PuzzleDescriptionText, PuzzleNoteText);
             UIManager.Instance.HideInteractText();
             if (PuzzleCodeManager.Instance != null)
             {

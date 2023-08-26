@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using PersonalSpace.Sid.Scripts.Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.Serialization;
 
-namespace PersonalSpace.Sid.Scripts
+namespace PersonalSpace.Sid.Scripts.KeypadSystems
 {
     public class KeypadSystem : MonoBehaviour
     {
@@ -16,6 +16,11 @@ namespace PersonalSpace.Sid.Scripts
         [SerializeField] private DoorTest door;
         
         [SerializeField] private TextMeshProUGUI displayText;
+        
+        [SerializeField] private AudioClip keypadProcessing;
+        [SerializeField] private AudioClip keyValid;
+        [SerializeField] private AudioClip keyError;
+        [SerializeField] private AudioClip doorOpen;
         
         public void AddToKeypadList(KeypadButton keypadButton)
         {
@@ -55,7 +60,6 @@ namespace PersonalSpace.Sid.Scripts
 
         private IEnumerator CheckListsAndDisplayMessages(KeypadButton keypadButton)
         {
-            //keypadButton.buttonImage.color = Color.yellow;
             BlockAllKeypadInput();
             displayText.text = "Processing...";
             yield return new WaitForSeconds(2f);
@@ -64,33 +68,31 @@ namespace PersonalSpace.Sid.Scripts
             {
                 if (referenceList.Count == playerKeypadButtonList.Count)
                 {
-                    //open door or something
-                    displayText.text ="code is valid, door opening...";
-                    //keypadButton.buttonImage.color = Color.white;
+                    SoundManager.Instance.PlaySoundEffects(keyValid);
+                    displayText.text ="Code is Valid, Door Opening...";
                     yield return new WaitForSeconds(1f);
+                    SoundManager.Instance.PlaySoundEffects(doorOpen);
                     door.Animate(true);
                 }
                 else
                 {
-                    displayText.text ="enter next digit";
                     yield return new WaitForSeconds(0.5f);
                     displayText.text = "";
-                
+                    SoundManager.Instance.PlaySoundEffects(keyValid);
                     foreach (var button in playerKeypadButtonList)
                     {
                         displayText.text += button.buttonNumber;
                     }
-                    //keypadButton.buttonImage.color = Color.white;
                     EnableAllKeypadInput();
                 }
             }
             else
             {
-                displayText.text ="wrong input, try again";
+                SoundManager.Instance.PlaySoundEffects(keyError);
+                displayText.text ="Wrong Input, Try Again";
                 yield return new WaitForSeconds(0.5f);
                 playerKeypadButtonList.Clear();
-                displayText.text = "enter code";
-                //keypadButton.buttonImage.color = Color.white;
+                displayText.text = "Enter Code:";
                 EnableAllKeypadInput();
             }
         }
