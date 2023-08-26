@@ -49,12 +49,13 @@ namespace PersonalSpace.Sid.Scripts
             foreach (var keypadButton in keypadButtonList)
             {
                 keypadButton.DisableInput();
+                keypadButton.HideSelectedButtonBorder();
             }
         }
 
         private IEnumerator CheckListsAndDisplayMessages(KeypadButton keypadButton)
         {
-            keypadButton.buttonImage.color = Color.yellow;
+            //keypadButton.buttonImage.color = Color.yellow;
             BlockAllKeypadInput();
             displayText.text = "Processing...";
             yield return new WaitForSeconds(2f);
@@ -65,7 +66,7 @@ namespace PersonalSpace.Sid.Scripts
                 {
                     //open door or something
                     displayText.text ="code is valid, door opening...";
-                    keypadButton.buttonImage.color = Color.white;
+                    //keypadButton.buttonImage.color = Color.white;
                     yield return new WaitForSeconds(1f);
                     door.Animate(true);
                 }
@@ -79,7 +80,7 @@ namespace PersonalSpace.Sid.Scripts
                     {
                         displayText.text += button.buttonNumber;
                     }
-                    keypadButton.buttonImage.color = Color.white;
+                    //keypadButton.buttonImage.color = Color.white;
                     EnableAllKeypadInput();
                 }
             }
@@ -89,7 +90,7 @@ namespace PersonalSpace.Sid.Scripts
                 yield return new WaitForSeconds(0.5f);
                 playerKeypadButtonList.Clear();
                 displayText.text = "enter code";
-                keypadButton.buttonImage.color = Color.white;
+                //keypadButton.buttonImage.color = Color.white;
                 EnableAllKeypadInput();
             }
         }

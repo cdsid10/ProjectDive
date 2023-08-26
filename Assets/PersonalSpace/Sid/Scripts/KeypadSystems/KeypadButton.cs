@@ -10,7 +10,7 @@ namespace PersonalSpace.Sid.Scripts
     {
         [Tooltip("Handled with code, instead of assigning it manually, need to give appropriate gameobject names")]
         [field: SerializeField] public string buttonNumber { get; private set; }
-        [field: SerializeField] public Image buttonImage { get; set; }
+        //[field: SerializeField] public Image buttonImage { get; set; }
         [SerializeField] private GameObject buttonHighlightBorder;
 
         private Collider keypadCollider;
@@ -20,7 +20,7 @@ namespace PersonalSpace.Sid.Scripts
         {
             keypadSystem = gameObject.GetComponentInParent<KeypadSystem>();
             keypadCollider = gameObject.GetComponent<Collider>();
-            buttonImage = gameObject.GetComponent<Image>();
+            //buttonImage = gameObject.GetComponent<Image>();
             buttonNumber = gameObject.name;
             HideSelectedButtonBorder();
         }

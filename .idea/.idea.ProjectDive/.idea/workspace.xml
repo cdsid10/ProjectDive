@@ -5,8 +5,163 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eda8b49c-6ad8-4700-a847-a0050fc19f78" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/TestSid.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/TestSid.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/InputSystem/StarterAssets.inputactions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/source.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/source/ACP_code.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/source/ACP_code.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/AccessPanel.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/AccessPanel.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_Roughness.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_Roughness.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_ao.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_ao.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_color.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_color.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_metal.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_metal.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_specular.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/code_specular.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/normal_code.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/access-control-panel-signaling/textures/normal_code.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/Bottle.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/Bottle.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_AO.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_AO.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_albedo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_albedo.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_metallic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_metallic.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_normal.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_normal.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_roughness.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/DefaultMaterial_roughness.jpg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/model.dae" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/bottlea/model.dae.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/DecorativeTable.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/DecorativeTable.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/DecorativeTable.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/DecorativeTable.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/Drawer.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/Drawer.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_diff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_diff.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_metall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_metall.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_nrmal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_nrmal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_rough.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/dectable_mat_rough.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_diff.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_diff.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_metall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_metall.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_nrmal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_nrmal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_rough.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/decorative-table/drawers_mat_rough.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/CoverColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/CoverColor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/CoverNormal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/CoverNormal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/CoverRoughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/CoverRoughness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/OldAlbum.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/OldAlbum.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/PaperColor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-book-prop-free-low-poly-agustin-honnun/PaperColor.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Mirror.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Mirror.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/MirrorBorder.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/MirrorBorder.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_AO.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_AO.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_BaseColor.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_BaseColor.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Metallic.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Metallic.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Normal.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Normal.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Opacity.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Opacity.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Roughness.tga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/Paint_DefaultMaterial_Roughness.tga.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/internal_ground_ao_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/tri.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/old-broken-mirror/tri.obj.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/sci-fi-trap.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/sci-fi-trap/Diplom.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/sci-fi-trap/Diplom.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_AO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_AO.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Diffuse.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Diffuse.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Metallic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Metallic.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Normal.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Normal.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Roughness.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/Telephone_Roughness.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/internal_ground_ao_texture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/internal_ground_ao_texture.jpeg.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/vintage_telephone 4 final.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/vintage_telephone 4 final.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/vintage_telephone.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/ImportedModels/vintage-telephone/vintage_telephone.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Solid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Solid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Transparent.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Transparent.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/FloatInSpace.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/FloatInSpace.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/FullBounce.physicMaterial" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/FullBounce.physicMaterial.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/IInteractable.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/IInteractable.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/InteractSwitch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/InteractSwitch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Player.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Player/PlayerInteractionManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Player/PlayerInteractionManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/BasePuzzlePiece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/BasePuzzlePiece.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/IPuzzlePieces.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/IPuzzlePieces.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Lights.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Lights/LightPiece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Lights/LightPiece.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Platforms.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Platforms/PlatformPiece.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Platforms/PlatformPiece.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/QuickTimeEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/QuickTimeEvent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/SanityTrigger.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/SanityTrigger/SanityTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/SanityTrigger/SanityTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/Trap.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/Trap.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectDive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectDive/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Aren/Models/WoodenDoor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Aren/Models/WoodenDoor.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/FPSRaycaster.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadRaycaster.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/FPSRaycaster.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadRaycaster.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/SanityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/SanityManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/TestSid.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/TestSid.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +172,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/FloatInSpace.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/PuzzleCodeManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/QuickTimeEvent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/SanityMechanic/SanityTrigger/SanityTrigger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@1.6.1/InputSystem/Plugins/PlayerInput/InputValue.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -60,6 +219,22 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath C:\Users\s1_r0\Documents\GitHub\ProjectDive -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\s1_r0\Documents\GitHub\ProjectDive" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\s1_r0\Documents\GitHub\ProjectDive -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\s1_r0\Documents\GitHub\ProjectDive" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.5f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath C:\Users\s1_r0\Documents\GitHub\ProjectDive -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -69,6 +244,26 @@
       <method v="2" />
     </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
@@ -100,6 +295,10 @@
       <workItem from="1692810797245" duration="4505000" />
       <workItem from="1692815526603" duration="1091000" />
       <workItem from="1692859368823" duration="8243000" />
+      <workItem from="1692896348565" duration="4923000" />
+      <workItem from="1692945437556" duration="6423000" />
+      <workItem from="1692976397748" duration="3325000" />
+      <workItem from="1693026368063" duration="14264000" />
     </task>
     <servers />
   </component>

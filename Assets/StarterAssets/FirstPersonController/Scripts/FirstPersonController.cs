@@ -21,6 +21,9 @@ namespace StarterAssets
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
 
+		[Tooltip("If player can move and jump with inputs (Traps can to trigger quicktime events)")]
+		[field: SerializeField] public bool CanMove { get; set; } = true;
+
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
 		public float JumpHeight = 1.2f;
@@ -114,6 +117,8 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			if (!CanMove) return;
+			
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -152,9 +157,11 @@ namespace StarterAssets
 				transform.Rotate(Vector3.up * _rotationVelocity);
 			}
 		}
-
+        
 		private void Move()
 		{
+			//if (!CanMove) return;
+			
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
@@ -202,6 +209,8 @@ namespace StarterAssets
 
 		private void JumpAndGravity()
 		{
+			//if (!CanMove) return;
+			
 			if (Grounded)
 			{
 				// reset the fall timeout timer
