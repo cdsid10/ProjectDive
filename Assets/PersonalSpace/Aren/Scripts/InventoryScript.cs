@@ -69,7 +69,6 @@ public class InventoryScript : MonoBehaviour
         }
 
         // add
-        Debug.Log(toGb.name);
         RectTransform _newItem = Instantiate(_item, toGb.position, Quaternion.identity, toGb);
         _newItem.anchoredPosition = Vector2.zero;
         _newItem.GetComponent<ItemInvScript>().itemName = itemName;

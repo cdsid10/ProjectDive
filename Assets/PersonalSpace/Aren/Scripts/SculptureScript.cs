@@ -1,23 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class SculptureScript : MonoBehaviour
 {
-    [SerializeField] private float _moveSpeed;
     private bool _isAggro = false;
     [SerializeField] private Transform _player;
     [SerializeField] private Camera _mainCam;
-    Rigidbody rb;
     [SerializeField] private Collider _collider;
     private Animator _animator;
     [SerializeField] private float _animSpeed;
+    private NavMeshAgent _agent;
+    private Transform _head;
+    [SerializeField] private Transform _humanoidRig;
 
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody>();
         _animator = GetComponentInChildren<Animator>();
+        _agent = GetComponent<NavMeshAgent>();
     }
 
 
@@ -43,14 +46,14 @@ public class SculptureScript : MonoBehaviour
 
         transform.LookAt(_playerXZ);
 
-        // set velocity directly to achieve constant velocity
-        rb.velocity = transform.forward * _moveSpeed;
+        _agent.destination = _player.position;
     }
 
 
     private void Halt()
     {
         _animator.speed = 0;
+        _agent.SetDestination(transform.position);
     }
 
 
@@ -59,8 +62,24 @@ public class SculptureScript : MonoBehaviour
         // Calculate the bounds of the object's collider
         Bounds _objBounds = _collider.bounds;
 
+        bool _inSight = true;
+
+        int otherLayers = ~LayerMask.GetMask("Player", "Sculpture");
+        RaycastHit hitInfo;
+        if (Physics.Raycast(_mainCam.transform.position, (transform.position - _mainCam.transform.position).normalized, out hitInfo, 100, otherLayers))
+        {
+            if (hitInfo.collider.gameObject.layer != LayerMask.NameToLayer("SculptureLimbs"))
+            {
+                _inSight = false;
+
+                Debug.DrawRay(_mainCam.transform.position, (transform.position - _mainCam.transform.position).normalized * 100, Color.red, 1);
+                Debug.Log(hitInfo.collider.gameObject.name);
+            }
+
+        }
+
         // Check if the object's bounds are within the camera's view frustum
-        return GeometryUtility.TestPlanesAABB(GeometryUtility.CalculateFrustumPlanes(_mainCam), _objBounds);
+        return GeometryUtility.TestPlanesAABB(GeometryUtility.CalculateFrustumPlanes(_mainCam), _objBounds) && _inSight;
     }
 
 
