@@ -1786,6 +1786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62983f9bac004ba6884caa5373ad4cd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <InteractText>k__BackingField: Press 'E' to Interact
   click: {fileID: 8300000, guid: 988be7a40d77dee46ab004eb29de29d5, type: 3}
 --- !u!1 &569549187
 GameObject:
@@ -8704,7 +8705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <IsInteractable>k__BackingField: 0
-  <InteractText>k__BackingField: Answer Call
+  <InteractText>k__BackingField: Press 'E' to Interact
+  <HasAlreadyRinged>k__BackingField: 0
   sceneLoader: {fileID: 310677537}
   clip: {fileID: 8300000, guid: 3c5c153cb5d00374dac462e1401f9fe7, type: 3}
 --- !u!114 &7952097219923578437

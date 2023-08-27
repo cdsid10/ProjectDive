@@ -106,9 +106,10 @@ namespace PersonalSpace.Sid.Scripts.Managers
             codePuzzleNote.text = "";
         }
 
-        public void ShowInteractText()
+        public void ShowInteractText(string text)
         {
             StartCoroutine(FadeUIElements(interactCanvasGroup, 1f, 0.25f));
+            interactText.text = text;
         }
 
         public void HideInteractText()
