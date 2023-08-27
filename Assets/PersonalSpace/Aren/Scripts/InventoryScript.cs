@@ -43,7 +43,7 @@ public class InventoryScript : MonoBehaviour
     {
         // update inventory info
         int _ = 0;
-        foreach (Transform gridbox in transform.GetComponentsInChildren<Transform>()) 
+        foreach (Transform gridbox in transform.GetComponentsInChildren<Transform>())
         {
             if (gridbox.childCount > 0 && gridbox.name.Contains("GridBox"))
             {
