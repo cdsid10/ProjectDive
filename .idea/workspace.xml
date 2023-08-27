@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fd01fde5-d6fb-4837-8cae-b2b093125610" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch/BigRedSwitch.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch/RedSwitchNotPressed.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch/RedSwitchPressed.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Analog_button_click.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Analog_button_click.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Door_open.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Door_open.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Electric_buzz.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Electric_buzz.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Jump_landing.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Jump_landing.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_error.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_error.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_processing.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_processing.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_solved_analog.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_solved_analog.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_valid.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Keypad_valid.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Layer_jump.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Layer_jump.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Object_floating.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Object_floating.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Player_walk.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Player_walk.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Soft_breathing.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Soft_breathing.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Switch.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Audio/Sfx/Switch.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Fonts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Fonts/Zector SDF.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Fonts/Zector SDF.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Fonts/Zector.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Fonts/Zector.otf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Menu.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Menu/GlobalVolumeProfile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Menu/GlobalVolumeProfile.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Particles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Particles/Dust.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Particles/Dust.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Managers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Managers/SoundManager.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Managers/SoundManager.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Managers/UIManager.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Managers/UIManager.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/PlayerRoot.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/PlayerRoot.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level3.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Menu.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Menu.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/EndGame.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/EndGame.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PlotAndGameOverview.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PlotAndGameOverview/InteractRecorder.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PlotAndGameOverview/InteractRecorder.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/SceneLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/SceneLoader.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProjectDive/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProjectDive/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Level2.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Level2.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level2.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Solid.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Solid.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch/RedSwitchPressed.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Transparent.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/Transparent.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch/BigRedSwitch.controller.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/beige_wall_002_diff_2k.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Materials/beige_wall_002_diff_2k.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Animations/BigRedSwitch/RedSwitchNotPressed.anim.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/MechanicsTestSid.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/MechanicsTestSid.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/MechanicsTestSid.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/MechanicsTestSid.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/BigRedSwitch.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/BigRedSwitch.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Keypad.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/Keypad.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/PhoneLight.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/PhoneLight.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/WoodenPlatforms.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Prefabs/WoodenPlatforms.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/PrototpeTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/PrototpeTest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/PrototpeTest.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/PrototpeTest.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/CheckPoints/CheckpointTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/CheckPoints/CheckpointTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/InteractPuzzleCode.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/InteractPuzzleCode.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/InteractSwitch.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/InteractSwitch.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Player/PlayerInteractionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Player/PlayerInteractionManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Platforms/PlatformPiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/PuzzlePieces/Platforms/PlatformPiece.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Telephone/InteractStartPhone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Interactions/Telephone/InteractStartPhone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/KeypadSystems/KeypadSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/SoundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/SoundManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scripts/Managers/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/TestLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/TestLevel.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PersonalSpace/Sid/Scenes/Level1.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StarterAssets/FirstPersonController/Scripts/FirstPersonController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TestLevel/GlobalVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TestLevel/GlobalVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/TMP Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2UYYHKxsmEr7u87GhhRKjOERwDd" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fd01fde5-d6fb-4837-8cae-b2b093125610" name="Changes" comment="" />
+      <created>1693117894711</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693117894711</updated>
+      <workItem from="1693117896693" duration="34000" />
+      <workItem from="1693118115276" duration="39000" />
+      <workItem from="1693118188402" duration="44000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

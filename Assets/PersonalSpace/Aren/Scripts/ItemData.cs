@@ -9,7 +9,6 @@ using UnityEngine.UI;
 
 public class ItemData : MonoBehaviour
 {
-    [SerializeField] public static Sprite[] itemSprites;
     [SerializeField] public static GameObject[] itemObjects;
 
     [SerializeField]
@@ -44,20 +43,10 @@ public class ItemData : MonoBehaviour
     }
 
 
-    [SerializeField] Sprite sprite_0;
-    [SerializeField] Sprite sprite_1;
-
     [SerializeField] GameObject object_1;
-
     private void Awake()
     {
-        Array.Resize(ref itemSprites, itemData.Count);
-        Array.Resize(ref itemObjects, itemData.Count);
-
-        // manual insert
-        itemSprites[0] = sprite_0;
-        itemSprites[1] = sprite_1;
-
+        Array.Resize(ref itemObjects, itemData.Count());
         itemObjects[1] = object_1;
     }
 }

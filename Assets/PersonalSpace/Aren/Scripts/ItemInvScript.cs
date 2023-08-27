@@ -1,9 +1,12 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
@@ -13,10 +16,16 @@ public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [NonSerialized] public string itemName = "Empty";
     [NonSerialized] public Transform parentAfterDrag;
     [NonSerialized] public Transform parentBeforeDrag;
+    private float _imageWidth;
+    [NonSerialized] public GameObject itemObj;
+    [NonSerialized] public TextMeshProUGUI text;
+
 
     private void Awake()
     {
         _image = GetComponent<Image>();
+        _imageWidth = _image.GetComponent<RectTransform>().localScale.x;
+        text = GetComponentInChildren<TextMeshProUGUI>();
     }
 
 
@@ -55,17 +64,5 @@ public class ItemInvScript : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
         // set replacee to replacer's parent before drag
         transform.SetParent(pointerItemScript.parentBeforeDrag);
-    }
-
-
-    private void FixedUpdate()
-    {
-        // update sprite
-        Sprite itemSprite = ItemData.itemSprites[int.Parse(ItemData.GetItemInfo(itemName, "Index"))];
-
-        if (GetComponent<Image>().sprite != itemSprite)
-        {
-            GetComponent<Image>().sprite = itemSprite;
-        }
     }
 }
