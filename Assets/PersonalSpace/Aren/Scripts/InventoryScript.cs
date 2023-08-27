@@ -30,16 +30,20 @@ public class InventoryScript : MonoBehaviour
         {
             inventory.Add("Empty");
         }
-
-        AddItem("Key", 3);
-        AddItem("Test_Item", 19);
     }
+
+
+    private void Start()
+    {
+        AddItem("Key", 3);
+    }
+
 
     private void FixedUpdate()
     {
         // update inventory info
         int _ = 0;
-        foreach (Transform gridbox in transform.GetComponentsInChildren<Transform>()) 
+        foreach (Transform gridbox in transform.GetComponentsInChildren<Transform>())
         {
             if (gridbox.childCount > 0 && gridbox.name.Contains("GridBox"))
             {
@@ -71,7 +75,11 @@ public class InventoryScript : MonoBehaviour
         // add
         RectTransform _newItem = Instantiate(_item, toGb.position, Quaternion.identity, toGb);
         _newItem.anchoredPosition = Vector2.zero;
-        _newItem.GetComponent<ItemInvScript>().itemName = itemName;
+
+        ItemInvScript _itemScript = _newItem.GetComponent<ItemInvScript>();
+        _itemScript.itemName = itemName;
+        _itemScript.itemObj = ItemData.GetObjectFromItemName(itemName);
+        _itemScript.text.text = itemName;
     }
 
 
