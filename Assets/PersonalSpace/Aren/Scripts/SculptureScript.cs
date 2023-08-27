@@ -28,6 +28,11 @@ public class SculptureScript : MonoBehaviour
     {
         _animator = GetComponentInChildren<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+    }
+
+
+    private void Start()
+    {
         _ogPos = transform.position;
         _ogRot = transform.rotation;
     }
@@ -58,7 +63,7 @@ public class SculptureScript : MonoBehaviour
     {
         foreach (SculptureScript sculptureScript in GameObject.Find("SculpturesFolder").GetComponentsInChildren<SculptureScript>())
         {
-            sculptureScript.isAggro = true;
+            //sculptureScript.isAggro = true;
         }
     }
 
@@ -97,6 +102,11 @@ public class SculptureScript : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if ((transform.position - _fpsController.transform.position).magnitude < 15)
+        {
+            isAggro = true;
+        }
+
         if (!IsInCamView())
         {
             if (isAggro)
