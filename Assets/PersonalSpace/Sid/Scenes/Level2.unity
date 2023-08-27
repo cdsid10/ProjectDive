@@ -97,7 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 86130f2ccf41ad0448650c31e284ec9d,
+    type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -980,6 +981,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -1523,7 +1529,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -2380,6 +2386,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -2393,7 +2404,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -3162,7 +3173,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -3525,10 +3536,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 213787495}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -3609,6 +3630,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -3622,7 +3648,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -3841,6 +3867,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -4068,6 +4099,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -4148,6 +4184,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -4799,7 +4840,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7735849, g: 0.7735849, b: 0.7735849, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.07
   m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5228,7 +5269,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5286,6 +5327,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -5499,7 +5545,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -5982,7 +6028,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -7712,10 +7758,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 213787495}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -8010,7 +8066,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8371,7 +8427,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -8642,7 +8698,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -9382,7 +9438,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7294118, g: 0.06666667, b: 0.047058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10144,6 +10200,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -10157,7 +10218,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -10678,7 +10739,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -10796,7 +10857,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -11362,10 +11423,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 213787495}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -12993,7 +13064,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -13951,10 +14022,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -14104,6 +14185,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -14499,6 +14585,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -14647,6 +14738,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -14781,7 +14877,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -15591,7 +15687,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -15876,6 +15972,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -16010,7 +16111,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -16161,10 +16262,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -16823,6 +16934,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -16957,7 +17073,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -17544,6 +17660,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -18069,7 +18190,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -18285,6 +18406,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -18438,6 +18564,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -18738,6 +18869,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -19198,7 +19334,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -20584,6 +20720,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -20597,7 +20738,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -21225,6 +21366,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -21517,7 +21663,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -21968,6 +22114,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -23009,6 +23160,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -23241,6 +23397,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -23557,10 +23718,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -24523,6 +24694,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -24657,7 +24833,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -24715,6 +24891,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -24928,7 +25109,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -27662,6 +27843,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -28700,7 +28886,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -29711,7 +29897,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -30776,6 +30962,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -30789,7 +30980,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -32432,10 +32623,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 213787495}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -32664,6 +32865,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -32928,6 +33134,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -32941,7 +33152,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -33012,6 +33223,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -33628,6 +33844,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -33781,6 +34002,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -34324,6 +34550,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -34398,6 +34629,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -34675,7 +34911,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -35232,7 +35468,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -35459,10 +35695,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -35903,7 +36149,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -36040,6 +36286,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -36174,7 +36425,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -36529,7 +36780,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -37009,10 +37260,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -37575,6 +37836,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -38312,6 +38578,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -39028,10 +39299,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -39780,7 +40061,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7294118, g: 0.06666667, b: 0.047058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -40821,6 +41102,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -40899,6 +41185,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -40912,7 +41203,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -41072,6 +41363,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -41085,7 +41381,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -41216,7 +41512,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -41642,6 +41938,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -41795,6 +42096,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -42170,6 +42476,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BigRedSwitch
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586529268586602506, guid: f3f386fe7e22e414eb1c0ec5dabcd987,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 7789146344314663645, guid: f3f386fe7e22e414eb1c0ec5dabcd987,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -42555,7 +42871,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -42613,6 +42929,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -43598,7 +43919,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -43735,6 +44056,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -44652,7 +44978,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -45390,10 +45716,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -45758,7 +46094,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -46459,10 +46795,20 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
       value: PhoneLight (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -47758,7 +48104,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -48498,7 +48844,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7294118, g: 0.06666667, b: 0.047058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -48635,6 +48981,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -49105,6 +49456,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -49729,6 +50085,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -49885,6 +50246,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 296805668}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Icon
@@ -50819,6 +51185,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -51376,6 +51747,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -51510,7 +51886,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
-  m_Intensity: 0.0025
+  m_Intensity: 2.07
   m_Range: 0.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -51963,6 +52339,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -52917,6 +53298,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -54419,7 +54805,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -55030,6 +55416,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -55401,7 +55792,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.7294118, g: 0.06666667, b: 0.047058824, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -55789,7 +56180,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -55847,6 +56238,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -56079,6 +56475,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -56207,7 +56608,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -56511,7 +56912,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -56973,7 +57374,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -57492,7 +57893,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.6226415, g: 0.5059349, b: 0.17915626, a: 1}
-  m_Intensity: 0.25
+  m_Intensity: 2.07
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -57560,6 +57961,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -0.19
       objectReference: {fileID: 0}
+    - target: {fileID: 3063250158122155685, guid: 26ecc573ca647d846941ed3d92c386bd,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 4338890756420545127, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Name
@@ -57573,7 +57979,7 @@ PrefabInstance:
     - target: {fileID: 6637641014480852017, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
       propertyPath: m_Intensity
-      value: 10.51
+      value: 2.07
       objectReference: {fileID: 0}
     - target: {fileID: 7567285962903448698, guid: 26ecc573ca647d846941ed3d92c386bd,
         type: 3}
@@ -57644,6 +58050,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
@@ -58127,6 +58538,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallLight
       objectReference: {fileID: 0}
+    - target: {fileID: 6545202433518097817, guid: 42240fbf365739b46a0653475b118aa3,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 6897386744791478025, guid: 42240fbf365739b46a0653475b118aa3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58176,6 +58592,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 14.971
+      objectReference: {fileID: 0}
+    - target: {fileID: 8693536155491290361, guid: 42240fbf365739b46a0653475b118aa3,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -58944,6 +59365,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerRoot
       objectReference: {fileID: 0}
+    - target: {fileID: 6783417055377555927, guid: 0503b4166edb30a47992452955caf50c,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 8079575473883381447, guid: 0503b4166edb30a47992452955caf50c,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -59134,6 +59560,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 28214657}
     m_Modifications:
+    - target: {fileID: 367472577193763939, guid: 747c4f968524cc143a0d31977bed9738,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 2.07
+      objectReference: {fileID: 0}
     - target: {fileID: 5373204452762944334, guid: 747c4f968524cc143a0d31977bed9738,
         type: 3}
       propertyPath: m_Name
