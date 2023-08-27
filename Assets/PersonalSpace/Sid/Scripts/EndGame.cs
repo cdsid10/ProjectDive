@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using PersonalSpace.Sid.Scripts.Managers;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 namespace PersonalSpace.Sid.Scripts
@@ -18,14 +19,18 @@ namespace PersonalSpace.Sid.Scripts
 
         IEnumerator PlayPhoneSounds()
         {
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(3f);
             foreach (var source in telephoneSources)
             {
                 float random = Random.Range(0.1f, 0.5f);
                 source.PlayDelayed(random);
             }
             
-            UIManager.Instance.FadeInCheckpointScreen(12f);
+            yield return new WaitForSeconds(5f);
+            
+            UIManager.Instance.FadeInCheckpointScreen(2f);
+            yield return new WaitForSeconds(6f);
+            SceneManager.LoadScene(0);
         }
     }
 }

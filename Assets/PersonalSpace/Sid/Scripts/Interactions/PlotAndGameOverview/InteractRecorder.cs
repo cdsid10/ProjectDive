@@ -6,7 +6,7 @@ namespace PersonalSpace.Sid.Scripts.Interactions.PlotAndGameOverview
     public class InteractRecorder : MonoBehaviour, IInteractable
     {
         public bool IsInteractable { get; set; }  = true;
-        public string InteractText { get; set; }
+        [field: SerializeField] public string InteractText { get; set; }
         
         [SerializeField] private AudioClip click;
         

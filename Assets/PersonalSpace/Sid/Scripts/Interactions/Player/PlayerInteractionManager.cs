@@ -27,7 +27,7 @@ namespace PersonalSpace.Sid.Scripts.Interactions.Player
             CanInteract = _interactable.IsInteractable;
             if (CanInteract)
             {
-                UIManager.Instance.ShowInteractText();
+                UIManager.Instance.ShowInteractText(_interactable.InteractText);
             }
         }
 
