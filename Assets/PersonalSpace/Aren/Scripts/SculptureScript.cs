@@ -54,6 +54,15 @@ public class SculptureScript : MonoBehaviour
     }
 
 
+    public static void Aggro()
+    {
+        foreach (SculptureScript sculptureScript in GameObject.Find("SculpturesFolder").GetComponentsInChildren<SculptureScript>())
+        {
+            sculptureScript.isAggro = true;
+        }
+    }
+
+
     private bool IsInCamView()
     {
         // Calculate the bounds of the object's collider
@@ -69,9 +78,9 @@ public class SculptureScript : MonoBehaviour
             if (Physics.Raycast(_mainCam.transform.position, (transform.position - _mainCam.transform.position).normalized, out hitInfo, 100, otherLayers))
             {
                 int layer = hitInfo.collider.gameObject.layer;
-                if ((layer != LayerMask.NameToLayer("SculptureLimbs") || layer != LayerMask.NameToLayer("Sculpture")) && transform.name.Contains("(1)"))
+                if ((layer != LayerMask.NameToLayer("SculptureLimbs") || layer != LayerMask.NameToLayer("Sculpture")))
                 {
-                    _inSight = false;
+                    //_inSight = false;
 
                     Debug.DrawRay(_mainCam.transform.position, (transform.position - _mainCam.transform.position).normalized * 100, Color.red, 1);
                     Debug.Log(hitInfo.collider.gameObject.name);
@@ -97,7 +106,6 @@ public class SculptureScript : MonoBehaviour
         }
         else
         {
-            isAggro = true;
             Halt();
         }
     }
